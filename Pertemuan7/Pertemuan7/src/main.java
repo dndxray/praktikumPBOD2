@@ -104,7 +104,45 @@ public class main {
  
         burung.Gerak();
         burung.Suara();
+
+        /* NOMOR 4 */
+        System.out.println("\n NOMOR 4 \n");
+        Dosen d1 = new Dosen("Pak Budi", "D1");
+        Dosen d2 = new Dosen("Bu Sari", "D2");
+
+        Mahasiswa2 M1 = new Mahasiswa2("Andi", "M1", d1);
+        Mahasiswa2 M2 = new Mahasiswa2("Budi", "M2", d1);
+        Mahasiswa2 M3 = new Mahasiswa2("Citra", "M3", d2);
+        Mahasiswa2 M4 = new Mahasiswa2("Dina", "M4", d2);
+        Mahasiswa2 M5 = new Mahasiswa2("Eka", "M5", d1);
+
+        Seminar seminar = new Seminar();
+
+        seminar.registrasi(d1);
+        seminar.registrasi(d2);
+        seminar.registrasi(M1);
+        seminar.registrasi(M2);
+        seminar.registrasi(M3);
+        seminar.registrasi(M4);
+        seminar.registrasi(M5);
+
+        System.out.println("Daftar Peserta:");
+        seminar.tampilPeserta();
+
+        System.out.println("\nTotal Peserta: " + seminar.countPeserta());
+
+        System.out.println("Total Mahasiswa: " + seminar.countMahasiswa());
+
+        M1.setWali(d2);
+
+        System.out.println("\nData Mahasiswa:");
+        M1.tampilDataMahasiswa();
+        M2.tampilDataMahasiswa();
+        M3.tampilDataMahasiswa();
+        M4.tampilDataMahasiswa();
+        M5.tampilDataMahasiswa();
  
     }
-
 }
+
+// hasil renungan = polimorfisme itu satu tipe data bisa dipakai untuk banyak jenis objek yang berbeda jadi bisa untuk menampung banyak jenis objek
