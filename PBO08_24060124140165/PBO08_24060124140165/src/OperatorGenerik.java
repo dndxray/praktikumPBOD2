@@ -1,3 +1,9 @@
+/* 
+NAMA = Dinda Isyariani
+NIM = 24060124140165
+LAB = D2
+TANGGAL = selasa 28/4/2026
+*/
 public class OperatorGenerik {
 
     public static <T> void TukarKonseptual(T a, T b){
@@ -15,5 +21,4 @@ public class OperatorGenerik {
     public static <T extends Kucing> double Bobot2(T k1, T k2){
         return k1.getBobot() + k2.getBobot();
     }
-    
 }

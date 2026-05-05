@@ -1,3 +1,10 @@
+/* 
+NAMA = Dinda Isyariani
+NIM = 24060124140165
+LAB = D2
+TANGGAL = selasa 28/4/2026
+*/
+
 public class Anggora extends Kucing {
 
     public Anggora(String nama, double bobot) {

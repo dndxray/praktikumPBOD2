@@ -2,7 +2,7 @@
 NAMA = Dinda Isyariani
 NIM = 24060124140165
 LAB = D2
-TANGGAL = selasa 21/4/2026
+TANGGAL = selasa 28/4/2026
 */
 public class Kucing extends Anabul {
     private double bobot;
@@ -14,6 +14,10 @@ public class Kucing extends Anabul {
 
     public double getBobot() {
         return bobot;
+    }
+
+    public void setBobot(double bobot) {
+        this.bobot = bobot;
     }
 
     @Override

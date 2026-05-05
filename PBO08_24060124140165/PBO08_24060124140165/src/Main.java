@@ -1,3 +1,10 @@
+/* 
+NAMA = Dinda Isyariani
+NIM = 24060124140165
+LAB = D2
+TANGGAL = selasa 28/4/2026
+*/
+
 public class Main {
     public static void main(String[] args) {
 
@@ -60,3 +67,10 @@ public class Main {
         }
     }
 }
+
+
+// Generik adalah konsep untuk membuat class atau method yang bisa di
+// pakai dengan berbagai tipe data tanpa perlu menulis ulang kode. Tipe
+//  data ditentukan saat pemakaian, bukan saat pembuatan. Dengan cara 
+// ini, satu kode bisa digunakan untuk Integer, String, atau objek lain 
+// seperti Anabul.
