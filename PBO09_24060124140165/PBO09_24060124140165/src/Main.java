@@ -27,9 +27,54 @@ public class Main {
 
         System.out.println("Apakah ELZA ada? " + KoleksiTeman.isMember("ELZA"));
 
-        KoleksiTeman.gantiNama("MARCHELLA", "MARCHELLA Baru");
+        KoleksiTeman.gantiNama("Dinda", "Dinda cape bgt jujur tugas kok ga selesai selesai lah malah curhat");
 
         System.out.println("Setelah ganti:");
         KoleksiTeman.showNama();
+
+        // delNama(nama)
+        System.out.println("\n Menghapus ELZA KHOIRISMA CARRYNDA");
+
+        KoleksiTeman.delNama("ELZA KHOIRISMA CARRYNDA");
+
+        System.out.println("Hasil setelah delNama : ");
+        KoleksiTeman.showNama();
+
+        // KOLEKSI KELAS BENTUKAN
+        Piaraan klinik = new Piaraan();
+
+        Anggora k1 = new Anggora("cimi", 10.9);
+        Kembangtelon k2 = new Kembangtelon("mini", 21.2);
+        Anjing a1 = new Anjing("gukguk");
+        Burung b1 = new Burung("wuk");
+
+        klinik.enqueueAnabul(k1);
+        klinik.enqueueAnabul(k2);
+        klinik.enqueueAnabul(a1);
+        klinik.enqueueAnabul(b1);
+
+        System.out.println("=== Daftar Anabul ===");
+        klinik.showAnabul();
+
+        System.out.println("\nJumlah Anabul : ");
+        System.out.println(klinik.getNbelm());
+
+        System.out.println("\nAnabul paling depan : ");
+        System.out.println(klinik.getAnabul().getNama());
+
+        System.out.println("\nJumlah keluarga kucing : ");
+        System.out.println(klinik.countKucing());
+
+        System.out.println("\nTotal bobot kucing : ");
+        System.out.println(klinik.bobotKucing());
+
+        System.out.println("\nJenis Anabul : ");
+        klinik.showJenisAnabul();
+
+        System.out.println("\nDequeue Anabul : ");
+        System.out.println(klinik.dequeueAnabul().getNama());
+
+        System.out.println("\nIsi antrean setelah dequeue : ");
+        klinik.showAnabul();
     }
 }
